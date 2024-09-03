@@ -1,0 +1,366 @@
+/* resources/css/app.css */
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px; /* Adjust as needed */
+    margin-left: 230px; /* Adjust as needed */
+}
+
+.flex-item {
+    width: 33.33%; /* Three columns per row */
+    padding: 30px 0 10px 0;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+.dropdown2 {
+    position: relative;
+
+}
+
+.dropdown-toggle2 {
+    cursor: pointer;
+}
+
+.dropdown-menu2 {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown below the image */
+    left: 0; /* Align dropdown to the left side of the image */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu2 a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dashboard css style */
+.navbar {
+    margin: 5% 10% 1% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px; /* Adjust the gap as needed */
+    width: calc(100% - 40%); /* Adjust width to accommodate left and right margins */
+    margin: 5% 20% 5% 20%;
+}
+
+.button-container button {
+    width: 50%;
+    height: 60px; /* Set a specific height */
+    padding: 10px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 20px; /* Adjust the radius to make the buttons more or less rounded */
+    background-color: #3d523d; /* Slightly darker green on hover */
+    color: white;
+    font-size: 20px; /* Adjust font size as needed */
+    cursor: pointer;
+    
+    
+}
+
+.button-container button:hover {
+    background-color: #688b68; /* Slightly darker green on hover */
+}
+
+
+.left-button {
+    justify-self: start;
+}
+
+.right-button {
+    justify-self: end;
+}
+
+
+
+/* style the model of teh delete function */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+/* CSS styles remain the same */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 40px; /* Increase padding for more space */
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-content input[type="text"] {
+    width: calc(100% - 20px); /* Adjust width to fit inside padding */
+    padding: 10px; /* Increase padding for more space */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #45a049;
+}
+
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* CSS for tablemodal */
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 20% auto; /* Center modal vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Set the width of the modal */
+}
+
+/* CSS for modal header */
+.modal-header2 {
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header2 h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* CSS for close button */
+.close2 {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close2:hover {
+    color: black;
+}
+
+/* CSS for table styling */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for modal content */
+
+
+
+/* CSS for modal */
+.modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* CSS for modal content */
+.modal-content3 {
+    background-color: #fefefe;
+    margin: auto; /* Center modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Set width of modal content */
+    margin-top: 10%; /* Margin from top */
+
+}
+
+/* CSS for close button */
+.close3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* CSS for form input fields */
+#addBookForm label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#addBookForm input[type="text"],
+#addBookForm input[type="number"],
+#addBookForm textarea {
+    width: calc(100% - 20px); /* Set width of input fields */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#addBookForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#addBookForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+#addBookForm select {
+    width: calc(100% - 20px); /* Set width of select field */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}

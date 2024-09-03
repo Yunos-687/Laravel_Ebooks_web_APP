@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* resources/css/app.css */
+
+.favorite-icon {
+    display: inline;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.favorite-icon.favorited {
+    border: 2px solid red;
+    width: 40px;
+    height: 40px;
+}
+
+.favorite-icons {
+    display: inline;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.favorite-icons.favorited {
+    border: 2px solid red;
+    width: 40px;
+    height: 40px;
+}
